@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "프론트엔드 코드 파서 by InAble",
+    "version": "1.0",
+    "description": "웹 페이지의 프론트엔드 코드를 긁어와 오버레이로 표시하는 확장 프로그램",
+    "permissions": [
+      "scripting",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
